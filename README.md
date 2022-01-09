@@ -8,6 +8,12 @@ Image superresolution is a task that restore image from low resolution. It can u
 
 ## Installation
 
+```git bash
+# In git bash
+git clone https://github.com/cszn/KAIR.git
+git clone https://github.com/JingyunLiang/SwinIR.git
+```
+
 ```cmd
 pip install -r requirements.txt
 ```
@@ -18,7 +24,8 @@ pip install -r requirements.txt
 python main_train_psnr.py --opt options/swinir/train_swinir_sr_classical.json
 ```
 
-You should put high resolution train image into `KAIR\trainsets\trainH`, then you can start to train.
+You should put high resolution train image into `KAIR\trainsets\trainH`, then you can start to train.  
+Please down load the `train_swinir_sr_classical.json` by [link](https://drive.google.com/file/d/18_s6cgUi8R8JhTXt_pFgBbCtRK1DPOti/view?usp=sharing) and replace the `KAIR\options\swinir\train_swinir_sr_classical.json`.
 
 ## Eval
 
@@ -60,6 +67,8 @@ The baseline performance with VDSR[5] in PSNR is 27.4162.
 
 ## Summary
 
+In this homework, I use Swin
+
 ## Model Weights
 
 Model Weights with PSNR 27.8064: <https://drive.google.com/file/d/1t825a76rK-E9zqpab5_Z5-hACedIqKhk/view?usp=sharing>
@@ -72,4 +81,3 @@ Model Weights with PSNR 27.8064: <https://drive.google.com/file/d/1t825a76rK-E9z
 [4] "2021 VRDL HW4 Super Resolution", <https://codalab.lisn.upsaclay.fr/competitions/622?secret_key=4e06d660-cd84-429c-971b-79d15f78d400#results>  
 [5] "VDSR, Kim etal. CVPR’16", <https://cv.snu.ac.kr/research/VDSR/VDSR_CVPR2016.pdf>  
 [6] "Image Super-Resolution on paperwithcode.com", <https://paperswithcode.com/task/image-super-resolution>
-
