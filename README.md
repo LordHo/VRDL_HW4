@@ -8,19 +8,21 @@ Image superresolution is a task that restore image from low resolution. It can u
 
 ## Installation
 
+```cmd
+cd VRDL_HW4
+pip install -r requirements.txt
+```
+
 ```git bash
 # In git bash
 git clone https://github.com/cszn/KAIR.git
 git clone https://github.com/JingyunLiang/SwinIR.git
 ```
 
-```cmd
-pip install -r requirements.txt
-```
-
 ## Train
 
 ```cmd
+cd KAIR
 python main_train_psnr.py --opt options/swinir/train_swinir_sr_classical.json
 ```
 
@@ -30,6 +32,7 @@ Please down load the `train_swinir_sr_classical.json` by [link](https://drive.go
 ## Eval
 
 ```cmd
+cd KAIR
 python main_test_swinir.py --task classical_sr --scale 3 --training_patch_size 48 --model_path <model path> --folder_gt <high resolution test data folder>
 ```
 
