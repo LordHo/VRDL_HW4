@@ -70,7 +70,7 @@ The baseline performance with VDSR[5] in PSNR is 27.4162.
 
 ## Summary
 
-In this homework, I use Swin
+In this homework, I use SwinIR as my model and easy to train and to eval by command provide by KAIR. It only need to provide HR image and LR image will provide automatically for training and calculate PSNR for eval (test) image.
 
 ## Model Weights
 
