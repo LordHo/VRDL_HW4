@@ -55,7 +55,7 @@ Loss: L1
 ## Result
 
 Final score of PSNR is 27.8064.
-![Final score of PSNR is 27.8064](readme_img\Final_score.png)
+![Final score of PSNR is 27.8064](readme_img/Final_score.png)
 The baseline performance with VDSR[5] in PSNR is 27.4162.
 
 ## Summary
